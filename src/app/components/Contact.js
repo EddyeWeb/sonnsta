@@ -1,113 +1,72 @@
 "use client";
 
-import Image from "next/image";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
-export default function Contact() {
+export default function Footer() {
   return (
-    <section id="contact" className="h-screen flex items-center justify-center py-12">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row gap-8">
-          <div className="flex-1">
-            <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
-            <form className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-              </div>
+    <footer id="contact" className="bg-white text-black border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Navigáció</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#top" className="hover:underline">
+                Sonnsta
+              </a>
+            </li>
+            <li>
+              <a href="#products" className="hover:underline">
+                Termékek
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" className="hover:underline">
+                Galéria
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline">
+                Kapcsolat
+              </a>
+            </li>
+          </ul>
+        </div>
 
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-              </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Elérhetőségek</h3>
+          <ul className="space-y-2">
+            <li>+36 30 123 4567</li>
+            <li>info@sonnsta.hu</li>
+            <li>1234 Budapest, Példa utca 1.</li>
+          </ul>
+        </div>
 
-              <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  required
-                  className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-              </div>
-
-              <div>
-                <button
-                  type="submit"
-                  className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div className="flex-1 relative">
-            <div className="absolute inset-0">
-              <Image
-                src="https://picsum.photos/500/500"
-                alt="Contact Image"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-
-            <div className="absolute inset-0 bg-opacity-50 backdrop-blur-sm flex items-center justify-center text-center text-white p-6">
-              <div>
-                <h3 className="text-xl font-semibold text-black">Get in Touch</h3>
-                <p className="mt-2 text-lg text-black">
-                  We love to hear from you! Whether you have a question or
-                  just want to chat, feel free to reach out.
-                </p>
-              </div>
-            </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Kövess minket</h3>
+          <div className="flex space-x-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-blue-600"
+            >
+              <FaFacebookF size={24} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-pink-500"
+            >
+              <FaInstagram size={24} />
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+      <div className="text-center text-sm text-gray-500 py-4 border-t border-gray-200">
+        © {new Date().getFullYear()} Sonnsta. Minden jog fenntartva.
+      </div>
+    </footer>
   );
 }
