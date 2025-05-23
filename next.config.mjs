@@ -2,9 +2,9 @@
 const nextConfig = {
   images: {
     domains: ["picsum.photos", "images.unsplash.com"],
-    unoptimized: true, // <<< EZ A LÉNYEG
+    unoptimized: true,
   },
-  output: 'export', // <<< statikus export
+  output: 'export',
 };
 
 export default nextConfig;
