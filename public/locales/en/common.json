@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Seeing is believing.",
+    "logo": "SONNSTA",
+    "products": "Products",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "products": {
+    "title": "Products",
+    "cards": {
+      "1": {
+        "title": "Single Module Window",
+        "description": "Provides a lighting effect that mimics natural sunlight.",
+        "button": "View"
+      },
+      "2": {
+        "title": "Double Module Window",
+        "description": "Bright rooms even in winter – less depression, better mood.",
+        "button": "View"
+      },
+      "3": {
+        "title": "Quadruple Module Window",
+        "description": "Low consumption, long lifespan, environmentally friendly solution.",
+        "button": "View"
+      }
+    },
+    "allProductsButton": "All Products"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "imageAlt": "Gallery image {{index}}"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "home": "Sonnsta",
+    "products": "Products",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "contactInfo": "Contact Information",
+    "phone": "+36 30 123 4567",
+    "email": "info@sonnsta.hu",
+    "address": "1234 Budapest, Példa Street 1.",
+    "followUs": "Follow us",
+    "copyright": "© {{year}} Sonnsta. All rights reserved."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Hiszed, ha látod.",
+    "logo": "SONNSTA",
+    "products": "Termékek",
+    "gallery": "Galéria",
+    "contact": "Kapcsolat"
+  },
+  "products": {
+    "title": "Termékek",
+    "cards": {
+      "1": {
+        "title": "Egy modulos ablak",
+        "description": "Olyan fényhatást biztosít, amely a napfény természetességét utánozza.",
+        "button": "Megtekintés"
+      },
+      "2": {
+        "title": "Két modulos ablak",
+        "description": "Télen is világos szobák – csökkentett depresszió, jobb hangulat.",
+        "button": "Megtekintés"
+      },
+      "3": {
+        "title": "Négy modulos ablak",
+        "description": "Alacsony fogyasztás, hosszú élettartam, környezetbarát megoldás.",
+        "button": "Megtekintés"
+      }
+    },
+    "allProductsButton": "Összes termék"
+  },
+  "gallery": {
+    "title": "Galéria",
+    "imageAlt": "Galéria kép {{index}}"
+  },
+  "footer": {
+    "navigation": "Navigáció",
+    "home": "Sonnsta",
+    "products": "Termékek",
+    "gallery": "Galéria",
+    "contact": "Kapcsolat",
+    "contactInfo": "Elérhetőségek",
+    "phone": "+36 30 123 4567",
+    "email": "info@sonnsta.hu",
+    "address": "1234 Budapest, Példa utca 1.",
+    "followUs": "Kövess minket",
+    "copyright": "© {{year}} Sonnsta. Minden jog fenntartva."
+  }
+}
