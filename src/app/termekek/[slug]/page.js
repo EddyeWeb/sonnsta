@@ -6,17 +6,17 @@ const TERMÉKEK = {
   "1-modulos-ablak": {
     cim: "1 modulos ablak",
     leiras: "Kis méretű, egymodulos ablak.",
-    kep: "https://picsum.photos/seed/1m/800/600",
+    kep: "/S.jpg",
   },
   "2-modulos-ablak": {
     cim: "2 modulos ablak",
     leiras: "Kétszárnyú megoldás, több fény.",
-    kep: "https://picsum.photos/seed/2m/800/600",
+    kep: "/M.jpg",
   },
   "4-modulos-ablak": {
     cim: "4 modulos ablak",
     leiras: "Maximális világosság nagy felületen.",
-    kep: "https://picsum.photos/seed/4m/800/600",
+    kep: "/L.jpg",
   },
 };
 
@@ -25,7 +25,6 @@ export async function generateStaticParams() {
 }
 
 export default async function TermekOldal({ params }) {
-  // Várd meg az params-t, mert Promise lehet
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 

@@ -13,17 +13,17 @@ export default function Products() {
   const cards = [
     {
       id: 1,
-      image: "https://picsum.photos/800/600?random=1",
+      image: "/S.jpg",
       link: "/termekek/1-modulos-ablak",
     },
     {
       id: 2,
-      image: "https://picsum.photos/800/600?random=2",
+      image: "/M.jpg",
       link: "/termekek/2-modulos-ablak",
     },
     {
       id: 3,
-      image: "https://picsum.photos/800/600?random=3",
+      image: "/L.jpg",
       link: "/termekek/4-modulos-ablak",
     },
   ];
