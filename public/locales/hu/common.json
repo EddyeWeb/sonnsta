@@ -10,19 +10,22 @@
     "title": "Termékek",
     "cards": {
       "1": {
-        "title": "Egy modulos ablak",
-        "description": "Olyan fényhatást biztosít, amely a napfény természetességét utánozza.",
-        "button": "Megtekintés"
+        "title": "SØNNSTA S",
+        "description": "Egymodulos napfényablak – a legkompaktabb SØNNSTA-élmény",
+        "button": "Megtekintés",
+        "details": "Természetes napfényhatás beltérben\nEgymodulos rendszer – ideális kisebb terekbe, előszobába, fürdőszobába vagy dolgozósarokba\nFogyasztás: 20 Watt\nValódi napfény színhőmérséklet és fénydinamika\nEgyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
       },
       "2": {
-        "title": "Két modulos ablak",
-        "description": "Télen is világos szobák – csökkentett depresszió, jobb hangulat.",
-        "button": "Megtekintés"
+        "title": "SØNNSTA M",
+        "description": "Kétmodulos napfényablak – tökéletes egyensúly méret és hatás között",
+        "button": "Megtekintés",
+        "details": "Természetes napfényhatás beltérben\nKétmodulos rendszer – nappalikba, hálószobákba, irodákba ideális választás\nFogyasztás: 40 Watt\nValódi napfény színhőmérséklet és fénydinamika\nEgyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
       },
       "3": {
-        "title": "Négy modulos ablak",
-        "description": "Alacsony fogyasztás, hosszú élettartam, környezetbarát megoldás.",
-        "button": "Megtekintés"
+        "title": "SØNNSTA L",
+        "description": "Négymodulos napfényablak – a lenyűgöző napfényélmény beltérben",
+        "button": "Megtekintés",
+        "details": "Természetes napfényhatás beltérben\nNégymodulos rendszer – nagyobb terekbe, vendéglátóipari vagy wellness környezetbe ideális\nFogyasztás: 80 Watt\nValódi napfény színhőmérséklet és fénydinamika\nEgyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
       }
     },
     "allProductsButton": "Összes termék"

@@ -10,19 +10,22 @@
     "title": "Products",
     "cards": {
       "1": {
-        "title": "Single Module Window",
-        "description": "Provides a lighting effect that mimics natural sunlight.",
-        "button": "View"
+        "title": "SØNNSTA S",
+        "description": "Single-module sunlight window – the most compact SØNNSTA experience",
+        "button": "View",
+        "details": "Natural sunlight effect indoors\nSingle-module system – ideal for smaller spaces like entryways, bathrooms, or work nooks\nConsumption: 20 Watts\nTrue sunlight color temperature and light dynamics\nEasy installation: 12V power supply, wall-mounted design"
       },
       "2": {
-        "title": "Double Module Window",
-        "description": "Bright rooms even in winter – less depression, better mood.",
-        "button": "View"
+        "title": "SØNNSTA M",
+        "description": "Double-module sunlight window – perfect balance between size and impact",
+        "button": "View",
+        "details": "Natural sunlight effect indoors\nDouble-module system – ideal choice for living rooms, bedrooms, or offices\nConsumption: 40 Watts\nTrue sunlight color temperature and light dynamics\nEasy installation: 12V power supply, wall-mounted design"
       },
       "3": {
-        "title": "Quadruple Module Window",
-        "description": "Low consumption, long lifespan, environmentally friendly solution.",
-        "button": "View"
+        "title": "SØNNSTA L",
+        "description": "Quadruple-module sunlight window – an impressive indoor sunlight experience",
+        "button": "View",
+        "details": "Natural sunlight effect indoors\nQuadruple-module system – perfect for larger spaces, hospitality, or wellness environments\nConsumption: 80 Watts\nTrue sunlight color temperature and light dynamics\nEasy installation: 12V power supply, wall-mounted design"
       }
     },
     "allProductsButton": "All Products"
