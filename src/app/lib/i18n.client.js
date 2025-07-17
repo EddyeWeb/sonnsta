@@ -7,19 +7,19 @@ import HttpApi from 'i18next-http-backend';
 
 if (typeof window !== 'undefined' && !i18n.isInitialized) {
   i18n
-    .use(HttpApi)
-    .use(LanguageDetector)
-    .use(initReactI18next)
+    .use(HttpApi) // betölti a fordításokat HTTP-ről
+    .use(LanguageDetector) // észleli a nyelvet a böngészőből
+    .use(initReactI18next) // összeköti React-tel
     .init({
       fallbackLng: 'en',
       supportedLngs: ['en', 'hu'],
       nonExplicitSupportedLngs: true,
       debug: process.env.NODE_ENV === 'development',
       interpolation: {
-        escapeValue: false,
+        escapeValue: false, // React automatikusan kezeli az escape-elést
       },
       backend: {
-        loadPath: '/locales/{{lng}}/{{ns}}.json',
+        loadPath: '/locales/{{lng}}/{{ns}}.json', // fordítási fájlok útvonala
       },
       ns: ['common'],
       defaultNS: 'common',
