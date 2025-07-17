@@ -44,34 +44,35 @@ export default function TermekekPage() {
             {t("products.title")}
           </h1>
 
-          <div className="space-y-12">
+          {/* Grid 3 kártyával */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {TERMÉKEK.map(({ id, slug, image }) => (
               <div
                 key={slug}
-                className="flex flex-col lg:flex-row bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
               >
-                <div className="w-full lg:w-1/2 relative h-64 lg:h-auto">
+                <div className="relative w-full h-64">
                   <Image
                     src={image}
                     alt={t(`products.cards.${id}.title`)}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                   />
                 </div>
 
-                <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
+                <div className="p-6 flex flex-col flex-grow">
                   <h2 className="text-2xl font-bold mb-4 text-gray-900">
                     {t(`products.cards.${id}.title`)}
                   </h2>
                   <p className="text-gray-700 mb-4">
                     {t(`products.cards.${id}.description`)}
                   </p>
-                  <p className="text-gray-600 whitespace-pre-wrap text-sm mb-6">
+                  <p className="text-gray-600 whitespace-pre-wrap text-sm mb-6 flex-grow">
                     {t(`products.cards.${id}.details`)}
                   </p>
                   <Link href={`/termekek/${slug}`}>
-                    <button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded">
+                    <button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded self-start">
                       {t(`products.cards.${id}.button`)}
                     </button>
                   </Link>

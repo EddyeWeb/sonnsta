@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 export default function ProductPageClient({ termek }) {
   const { t } = useTranslation();
-  const { id, image, link } = termek;
+  const { id, image } = termek;
 
   return (
     <>
@@ -24,20 +24,18 @@ export default function ProductPageClient({ termek }) {
             </Link>
           </div>
 
-          <div className="bg-white shadow-xl w-full flex flex-col lg:flex-row overflow-hidden">
-            {/* Kép */}
-            <div className="relative w-full lg:w-1/2 h-72 lg:h-auto overflow-hidden">
+          <div className="w-full flex flex-col lg:flex-row gap-8">
+            <div className="relative w-full lg:w-1/2 h-72 lg:h-auto shadow-xl rounded-lg overflow-hidden">
               <Image
                 src={image}
                 alt={t(`products.cards.${id}.title`)}
                 fill
-                className="object-cover"
+                className="object-cover rounded-lg"
                 priority
               />
             </div>
 
-            {/* Szöveges rész */}
-            <div className="w-full lg:w-1/2 lg:pl-12 p-6 flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 p-8 bg-white shadow-xl rounded-lg flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-6 text-gray-900">
                 {t(`products.cards.${id}.title`)}
               </h1>
