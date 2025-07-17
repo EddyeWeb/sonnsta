@@ -8,8 +8,8 @@ export default function Story() {
   return (
     <section id="story" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="inline-flex items-stretch gap-12">
-          <div className="h-[50vh] relative aspect-[3/4]">
+        <div className="flex flex-col md:flex-row md:items-stretch md:gap-12">
+          <div className="relative w-full md:w-1/3 md:h-[50vh] aspect-[3/4] md:aspect-auto">
             <Image
               src="/gyula.jpg"
               alt="Gyula portré"
@@ -19,7 +19,7 @@ export default function Story() {
             />
           </div>
 
-          <div className="h-[50vh] bg-gray-50 p-8 rounded-xl shadow-lg flex flex-col justify-center">
+          <div className="w-full md:w-2/3 bg-gray-50 p-8 rounded-xl shadow-lg flex flex-col justify-center mt-8 md:mt-0 md:h-[50vh]">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               {t("story.title")}
             </h3>
