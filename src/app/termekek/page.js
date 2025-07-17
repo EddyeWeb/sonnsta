@@ -30,14 +30,17 @@ export default function TermekekPage() {
     <>
       <Header />
       <div className="min-h-screen py-20 px-4 bg-gray-100">
-        <div className="max-w-7xl mx-auto">
-          <Link
-            href="/"
-            className="inline-flex items-center text-blue-600 hover:underline font-medium mb-8"
-          >
-            ← {t("footer.home")}
-          </Link>
-          <h1 className="text-4xl font-bold mb-10 text-center">
+        <div className="container mx-auto">
+          <div className="mb-8">
+            <Link
+              href="/"
+              className="inline-flex items-center hover:underline font-medium text-gray-700"
+            >
+              ← {t("footer.home")}
+            </Link>
+          </div>
+
+          <h1 className="text-4xl font-bold mb-12 text-center text-gray-900">
             {t("products.title")}
           </h1>
 
@@ -58,7 +61,7 @@ export default function TermekekPage() {
                 </div>
 
                 <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
-                  <h2 className="text-2xl font-bold mb-4">
+                  <h2 className="text-2xl font-bold mb-4 text-gray-900">
                     {t(`products.cards.${id}.title`)}
                   </h2>
                   <p className="text-gray-700 mb-4">

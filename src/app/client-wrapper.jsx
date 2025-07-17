@@ -3,6 +3,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Products from './components/Products';
+import Story from './components/Story';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 
@@ -12,6 +13,7 @@ export default function ClientWrapper() {
       <Header />
       <Hero />
       <Products />
+      <Story />
       <Gallery />
       <Contact />
     </>

@@ -3,6 +3,7 @@
     "title": "Seeing is believing.",
     "logo": "SONNSTA",
     "products": "Products",
+    "story": "Story",
     "gallery": "Gallery",
     "contact": "Contact"
   },
@@ -29,6 +30,10 @@
       }
     },
     "allProductsButton": "All Products"
+  },
+  "story": {
+    "title": "Our Story",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac erat at orci convallis tincidunt. Suspendisse potenti. Morbi nec ultrices risus."
   },
   "gallery": {
     "title": "Gallery",

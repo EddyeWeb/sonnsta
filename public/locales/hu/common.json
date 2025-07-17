@@ -3,6 +3,7 @@
     "title": "Hiszed, ha látod.",
     "logo": "SONNSTA",
     "products": "Termékek",
+    "story": "Történet",
     "gallery": "Galéria",
     "contact": "Kapcsolat"
   },
@@ -29,6 +30,10 @@
       }
     },
     "allProductsButton": "Összes termék"
+  },
+  "story": {
+    "title": "A mi történetünk",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac erat at orci convallis tincidunt. Suspendisse potenti. Morbi nec ultrices risus."
   },
   "gallery": {
     "title": "Galéria",

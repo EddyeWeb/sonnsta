@@ -21,6 +21,13 @@ export default function Header() {
         {t("hero.products")}
       </Link>
       <Link
+        href="/#story"
+        className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-medium"
+        onClick={() => setIsOpen(false)}
+      >
+        {t("hero.story")}
+      </Link>
+      <Link
         href="/#gallery"
         className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-medium"
         onClick={() => setIsOpen(false)}
