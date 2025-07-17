@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/Header";
+import Contact from '../components/Contact';
 import { useTranslation } from "react-i18next";
 
 const TERMÉKEK = [
@@ -28,7 +29,7 @@ export default function TermekekPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen pt-20 px-4 bg-gray-100">
+      <div className="min-h-screen py-20 px-4 bg-gray-100">
         <div className="max-w-7xl mx-auto">
           <Link
             href="/"
@@ -77,6 +78,7 @@ export default function TermekekPage() {
           </div>
         </div>
       </div>
+      <Contact />
     </>
   );
 }

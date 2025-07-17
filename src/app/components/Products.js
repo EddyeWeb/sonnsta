@@ -45,7 +45,9 @@ export default function Products() {
       className="w-full h-screen flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
-        <h1 className="text-4xl font-bold mb-10 text-center">{t("products.title")}</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">
+          {t("products.title")}
+        </h1>
         <Slider {...settings}>
           {cards.map(({ id, image, link }) => (
             <div key={id} className="px-4">
@@ -61,17 +63,30 @@ export default function Products() {
                   />
                 </div>
 
-                <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center items-start">
-                  <h2 className="text-2xl font-bold mb-4">{t(`products.cards.${id}.title`)}</h2>
-                  <p className="text-gray-700 mb-4">{t(`products.cards.${id}.description`)}</p>
-                  <p className="text-gray-600 whitespace-pre-wrap mb-6">
-                    {t(`products.cards.${id}.details`)}
-                  </p>
-                  <Link href={link}>
-                    <button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded">
-                      {t(`products.cards.${id}.button`)}
-                    </button>
-                  </Link>
+                <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
+                  <div className="space-y-4">
+                    <h2 className="text-3xl font-bold text-gray-900">
+                      {t(`products.cards.${id}.title`)}
+                    </h2>
+
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      {t(`products.cards.${id}.description`)}
+                    </p>
+
+                    <ul className="list-disc pl-5 text-gray-600 space-y-1">
+                      {t(`products.cards.${id}.details`)
+                        .split("\n")
+                        .map((line, idx) => (
+                          <li key={idx}>{line}</li>
+                        ))}
+                    </ul>
+
+                    <Link href={link}>
+                      <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
+                        {t(`products.cards.${id}.button`)}
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
