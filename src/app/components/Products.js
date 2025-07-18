@@ -3,6 +3,7 @@
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -47,7 +48,19 @@ function NextArrow(props) {
 }
 
 export default function Products() {
-  const cards = Object.values(TERMÉKEK); // ✅ egységes adatforrásból
+  const cards = Object.values(TERMÉKEK); // egységes adatforrásból
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // első futás
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const settings = {
     dots: true,
@@ -55,11 +68,15 @@ export default function Products() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: !isMobile,
     autoplay: true,
     autoplaySpeed: 3000,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
+    ...(isMobile
+      ? {}
+      : {
+          prevArrow: <PrevArrow />,
+          nextArrow: <NextArrow />,
+        }),
   };
 
   return (
