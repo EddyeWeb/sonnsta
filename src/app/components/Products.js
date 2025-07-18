@@ -6,6 +6,35 @@ import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+function PrevArrow(props) {
+  const { className, onClick, style } = props;
+  return (
+    <button
+      className={className}
+      style={{ ...style, display: "block", background: "transparent", border: "none" }}
+      onClick={onClick}
+      aria-label="Previous"
+    >
+      <ArrowLeft color="black" size={30} />
+    </button>
+  );
+}
+
+function NextArrow(props) {
+  const { className, onClick, style } = props;
+  return (
+    <button
+      className={className}
+      style={{ ...style, display: "block", background: "transparent", border: "none" }}
+      onClick={onClick}
+      aria-label="Next"
+    >
+      <ArrowRight color="black" size={30} />
+    </button>
+  );
+}
 
 export default function Products() {
   const { t } = useTranslation();
@@ -37,6 +66,8 @@ export default function Products() {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
 
   return (
@@ -45,9 +76,7 @@ export default function Products() {
       className="w-full min-h-screen py-12 flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
-        <h1 className="text-4xl font-bold mb-10 text-center">
-          {t("products.title")}
-        </h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">{t("products.title")}</h1>
         <Slider {...settings}>
           {cards.map(({ id, image, link }) => (
             <div key={id} className="px-4">

@@ -18,3 +18,7 @@ body {
   color: var(--foreground);
   font-family: "Geist", sans-serif !important;
 }
+
+.slick-prev:before, .slick-next:before {
+  content: '' !important;
+}
