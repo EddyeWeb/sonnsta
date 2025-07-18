@@ -65,49 +65,53 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="w-full min-h-screen py-12 flex items-center justify-center bg-gray-100"
+      className="w-full min-h-screen py-8 sm:py-12 flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
         <h1 className="text-4xl font-bold mb-10 text-center">Termékek</h1>
         <Slider {...settings}>
-          {cards.map(({ id, image, slug, title, description, details, button }) => (
-            <div key={id} className="px-4">
-              <div className="flex flex-col lg:flex-row h-[70vh] bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="w-full lg:w-1/2 relative h-1/2 lg:h-full">
-                  <Image
-                    src={image}
-                    alt={title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    priority
-                  />
-                </div>
+          {cards.map(
+            ({ id, image, slug, title, description, details, button }) => (
+              <div key={id} className="px-4">
+                <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="w-full lg:w-1/2 relative h-64 lg:h-auto">
+                    <Image
+                      src={image}
+                      alt={title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority
+                    />
+                  </div>
 
-                <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
-                  <div className="space-y-4">
-                    <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
+                  <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col justify-center">
+                    <div className="space-y-4">
+                      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                        {title}
+                      </h2>
 
-                    <p className="text-gray-700 text-lg leading-relaxed">
-                      {description}
-                    </p>
+                      <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                        {description}
+                      </p>
 
-                    <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                      {details.map((line, idx) => (
-                        <li key={idx}>{line}</li>
-                      ))}
-                    </ul>
+                      <ul className="list-disc pl-5 text-gray-600 space-y-1">
+                        {details.map((line, idx) => (
+                          <li key={idx}>{line}</li>
+                        ))}
+                      </ul>
 
-                    <Link href={`/termekek/${slug}`}>
-                      <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
-                        {button}
-                      </button>
-                    </Link>
+                      <Link href={`/termekek/${slug}`}>
+                        <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
+                          {button}
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </Slider>
 
         <div className="flex justify-center mt-8">
