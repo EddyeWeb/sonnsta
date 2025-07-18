@@ -7,10 +7,13 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-const images = Array.from({ length: 8 }).map((_, i) => ({
-  src: `https://picsum.photos/seed/${i + 1}/1200/800`,
-  thumbnail: `https://picsum.photos/seed/${i + 1}/400/300`,
-}));
+const images = Array.from({ length: 9 }).map((_, i) => {
+  const num = i + 1;
+  return {
+    src: `/gallery/${num}.jpg`,
+    thumbnail: `/gallery/${num}.jpg`,
+  };
+});
 
 const Gallery = () => {
   const [index, setIndex] = useState(-1);

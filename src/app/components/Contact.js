@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -13,24 +14,24 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Navigáció</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#top" className="hover:underline">
+              <Link href="/#top" className="hover:underline">
                 Sonnsta
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#products" className="hover:underline">
+              <Link href="/#products" className="hover:underline">
                 Termékek
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#gallery" className="hover:underline">
+              <Link href="/#gallery" className="hover:underline">
                 Galéria
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <Link href="/#contact" className="hover:underline">
                 Kapcsolat
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -63,12 +64,11 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
         <div>
           <h3 className="text-lg font-semibold mb-4">Kövess minket</h3>
           <div className="flex space-x-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61557242503375"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400"
@@ -76,7 +76,7 @@ export default function Footer() {
               <FaFacebookF size={24} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sonnsta_windows?igsh=MWVmeXJ2dDFhcWQ1NQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-400"
