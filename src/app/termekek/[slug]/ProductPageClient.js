@@ -25,17 +25,20 @@ export default function ProductPageClient({ termek }) {
           </div>
 
           <div className="w-full flex flex-col lg:flex-row gap-8">
-            <div className="relative w-full lg:w-1/2 h-72 lg:h-auto shadow-xl rounded-lg overflow-hidden">
-              <Image
-                src={image}
-                alt={t(`products.cards.${id}.title`)}
-                fill
-                className="object-cover rounded-lg"
-                priority
-              />
+            <div className="w-full lg:w-1/2">
+              <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src={image}
+                  alt={t(`products.cards.${id}.title`)}
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
             </div>
 
-            <div className="w-full lg:w-1/2 p-8 bg-white shadow-xl rounded-lg flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-lg p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-6 text-gray-900">
                 {t(`products.cards.${id}.title`)}
               </h1>

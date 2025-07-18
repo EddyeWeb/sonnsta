@@ -42,7 +42,7 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="w-full h-screen flex items-center justify-center bg-gray-100"
+      className="w-full min-h-screen py-12 flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
         <h1 className="text-4xl font-bold mb-10 text-center">
@@ -95,7 +95,7 @@ export default function Products() {
 
         <div className="flex justify-center mt-8">
           <Link href="/termekek">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
               {t("products.allProductsButton")}
             </button>
           </Link>

@@ -19,7 +19,7 @@ export default function Story() {
             />
           </div>
 
-          <div className="w-full md:w-2/3 bg-gray-50 p-8 rounded-xl shadow-lg flex flex-col justify-center mt-8 md:mt-0 md:h-[50vh]">
+          <div className="w-full md:w-2/3 bg-gray-50 p-8 rounded-xl shadow-lg flex flex-col justify-center mt-8 md:mt-0 min-h-[400px]">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               {t("story.title")}
             </h3>

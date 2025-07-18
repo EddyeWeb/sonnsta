@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/Header";
-import Contact from '../components/Contact';
+import Contact from "../components/Contact";
 import { useTranslation } from "react-i18next";
 
 const TERMÉKEK = [
@@ -44,7 +44,6 @@ export default function TermekekPage() {
             {t("products.title")}
           </h1>
 
-          {/* Grid 3 kártyával */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {TERMÉKEK.map(({ id, slug, image }) => (
               <div
@@ -65,14 +64,18 @@ export default function TermekekPage() {
                   <h2 className="text-2xl font-bold mb-4 text-gray-900">
                     {t(`products.cards.${id}.title`)}
                   </h2>
-                  <p className="text-gray-700 mb-4">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     {t(`products.cards.${id}.description`)}
                   </p>
-                  <p className="text-gray-600 whitespace-pre-wrap text-sm mb-6 flex-grow">
-                    {t(`products.cards.${id}.details`)}
-                  </p>
+                  <ul className="list-disc pl-5 text-gray-600 space-y-1 text-sm mb-6 flex-grow">
+                    {t(`products.cards.${id}.details`)
+                      .split("\n")
+                      .map((line, idx) => (
+                        <li key={idx}>{line}</li>
+                      ))}
+                  </ul>
                   <Link href={`/termekek/${slug}`}>
-                    <button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded self-start">
+                    <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
                       {t(`products.cards.${id}.button`)}
                     </button>
                   </Link>
