@@ -1,54 +1,65 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isLanding = pathname === "/";
+
   const [isOpen, setIsOpen] = useState(false);
-  const [isTop, setIsTop] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setIsTop(window.scrollY < 250);
+    if (!isLanding) return;
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLanding]);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const linkClass = isTop
-    ? "text-white hover:text-gray-300 transition-colors duration-700 ease-in-out"
-    : "text-gray-800 hover:text-gray-900 transition-colors duration-700 ease-in-out";
+  // Dinamikusan állítjuk a menüelemek színét
+  const linkBaseClasses =
+    "px-3 py-2 text-base font-karla font-medium transition-colors duration-300";
+
+  const linkColorClasses = isLanding && !scrolled
+    ? "text-white hover:text-gray-300"
+    : "text-gray-500 hover:text-gray-700";
 
   const menuItems = (
     <>
       <Link
         href="/#story"
-        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
+        className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
         Történet
       </Link>
       <Link
         href="/#products"
-        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
+        className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
         Termékek
       </Link>
       <Link
         href="/#gallery"
-        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
+        className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
         Galéria
       </Link>
       <Link
         href="/#contact"
-        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
+        className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
         Kapcsolat
@@ -56,35 +67,38 @@ export default function Header() {
     </>
   );
 
+  const navClasses = isLanding
+    ? scrolled
+      ? "bg-white shadow-md"
+      : "bg-transparent"
+    : "bg-white shadow-md";
+
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-700 ease-in-out ${
-        isTop
-          ? "bg-transparent"
-          : "bg-white/30 backdrop-blur-md shadow-md"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${navClasses}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className={`uppercase font-karla font-bold tracking-wide text-2xl transition-colors duration-700 ease-in-out ${
-              isTop ? "text-white" : "text-gray-900"
+            className={`text-2xl font-bold tracking-wide font-karla transition-colors duration-300 ${
+              isLanding && !scrolled ? "text-white" : "text-gray-900"
             }`}
           >
-            <span>Sønnsta</span>
+            <span className="uppercase">Sønnsta</span>
           </Link>
 
-          <div className="hidden md:flex space-x-4 items-center">
-            {menuItems}
-          </div>
+          <div className="hidden md:flex space-x-4 items-center">{menuItems}</div>
 
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className={`transition-colors duration-700 ease-in-out ${
-                isTop ? "text-white" : "text-gray-600 hover:text-gray-900"
+              className={`focus:outline-none transition-colors duration-300 ${
+                isLanding && !scrolled
+                  ? "text-white hover:text-gray-300"
+                  : "text-gray-600 hover:text-gray-900"
               }`}
+              aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -94,10 +108,10 @@ export default function Header() {
 
       {isOpen && (
         <div
-          className={`md:hidden px-4 pb-4 border-t space-y-2 flex flex-col items-center transition-colors duration-700 ease-in-out ${
-            isTop
-              ? "bg-black/50 text-white border-gray-700"
-              : "bg-white/30 backdrop-blur-md border-gray-200 text-gray-700"
+          className={`md:hidden px-4 pb-4 border-t space-y-2 flex flex-col items-center transition-colors duration-300 ${
+            navClasses.includes("bg-white")
+              ? "bg-white border-gray-200"
+              : "bg-transparent border-transparent"
           }`}
         >
           {menuItems}
