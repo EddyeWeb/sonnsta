@@ -16,7 +16,7 @@ export default function Header() {
     if (!isLanding) return;
 
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 300);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,7 +26,6 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Dinamikusan állítjuk a menüelemek színét
   const linkBaseClasses =
     "px-3 py-2 text-base font-karla font-medium transition-colors duration-300";
 
