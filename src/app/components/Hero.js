@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative flex items-center justify-center h-full z-10 px-4">
         <h2 className="text-white text-5xl md:text-6xl font-bold text-center max-w-4xl">
-          {t("hero.title")}
+          {t("hero.title")}a
         </h2>
       </div>
     </div>
