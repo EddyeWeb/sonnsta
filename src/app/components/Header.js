@@ -29,9 +29,10 @@ export default function Header() {
   const linkBaseClasses =
     "px-3 py-2 text-base font-karla font-medium transition-colors duration-300";
 
-  const linkColorClasses = isLanding && !scrolled
-    ? "text-white hover:text-gray-300"
-    : "text-gray-500 hover:text-gray-700";
+  const linkColorClasses =
+    isLanding && !scrolled
+      ? "text-white hover:text-gray-300"
+      : "text-gray-700 hover:text-gray-900";
 
   const menuItems = (
     <>
@@ -66,10 +67,11 @@ export default function Header() {
     </>
   );
 
+  // Ez a háttér csak görgetés után lesz üveg hatású
   const navClasses = isLanding
     ? scrolled
-      ? "bg-white shadow-md"
-      : "bg-transparent"
+      ? "bg-white/70 backdrop-blur-md shadow-md"
+      : "bg-transparent shadow-none"
     : "bg-white shadow-md";
 
   return (
@@ -108,8 +110,8 @@ export default function Header() {
       {isOpen && (
         <div
           className={`md:hidden px-4 pb-4 border-t space-y-2 flex flex-col items-center transition-colors duration-300 ${
-            navClasses.includes("bg-white")
-              ? "bg-white border-gray-200"
+            scrolled
+              ? "bg-white/70 backdrop-blur-md border-gray-200"
               : "bg-transparent border-transparent"
           }`}
         >
