@@ -23,9 +23,21 @@ export default function Story() {
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               {t("story.title")}
             </h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-gray-700 leading-relaxed text-lg mb-5">
               {t("story.description")}
             </p>
+            <p className="text-gray-700 leading-relaxed text-lg mb-5">
+              {t("story.description2")}
+            </p>
+            <p className="text-gray-700 leading-relaxed text-lg mb-5">
+              {t("story.description3")}
+            </p>
+            <p className="text-gray-700 leading-relaxed text-lg mb-5">
+              {t("story.description4")}
+            </p>
+            <strong className="text-gray-700 leading-relaxed text-lg mb-5">
+              {t("story.description5")}
+            </strong>
           </div>
         </div>
       </div>

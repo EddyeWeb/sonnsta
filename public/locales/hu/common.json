@@ -32,8 +32,12 @@
     "allProductsButton": "Összes termék"
   },
   "story": {
-    "title": "A mi történetünk",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac erat at orci convallis tincidunt. Suspendisse potenti. Morbi nec ultrices risus."
+    "title": "Természetes fényélmény, beltérben. SØNNSTA.",
+    "description": "A SØNNSTA egy különleges beltéri ablak, amely a természetes napfény látványát és hatását idézi meg ott, ahol valódi napfény nem érhető el. A fejlesztés célja az volt, hogy vizuálisan és érzetre is megtévesztően hiteles napfényélményt hozzon létre, mindezt energiatakarékosan, LED-alapú technológiával.",
+    "description2": "A megoldás több éves kutatás és kísérletezés eredménye. A beépített prizmarendszer vizuális mélységérzetet ad, ezzel együtt pedig valódi napfényhatást kelt.",
+    "description3": "És még ennél is többet: Jó hangulatot!",
+    "description4": "A SØNNSTA ma már szabadalommal védett innováció, amely lakásokban, irodákban és professzionális környezetben is újraértelmezi a beltéri világítást.",
+    "description5": "SØNNSTA. Hiszed, ha látod."
   },
   "gallery": {
     "title": "Galéria",

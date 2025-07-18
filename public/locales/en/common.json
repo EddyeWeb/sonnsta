@@ -32,8 +32,12 @@
     "allProductsButton": "All Products"
   },
   "story": {
-    "title": "Our Story",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac erat at orci convallis tincidunt. Suspendisse potenti. Morbi nec ultrices risus."
+    "title": "Natural sunlight experience, indoors. SØNNSTA.",
+    "description": "SØNNSTA is a unique indoor window that recreates the appearance and effect of natural sunlight in places where real sunlight cannot reach. The goal of the development was to create a deceptively realistic sunlight experience, both visually and atmospherically, using energy-efficient, LED-based technology.",
+    "description2": "The solution is the result of years of research and experimentation. The built-in prism system creates a sense of visual depth, evoking a true sunlight effect.",
+    "description3": "And even more than that: It brings a good mood!",
+    "description4": "SØNNSTA is now a patented innovation that redefines indoor lighting in homes, offices, and professional environments.",
+    "description5": "SØNNSTA. See it to believe it."
   },
   "gallery": {
     "title": "Gallery",
