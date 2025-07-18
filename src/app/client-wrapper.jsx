@@ -12,8 +12,8 @@ export default function ClientWrapper() {
     <>
       <Header />
       <Hero />
-      <Products />
       <Story />
+      <Products />
       <Gallery />
       <Contact />
     </>

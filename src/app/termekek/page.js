@@ -75,7 +75,7 @@ export default function TermekekPage() {
                       ))}
                   </ul>
                   <Link href={`/termekek/${slug}`}>
-                    <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
+                    <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
                       {t(`products.cards.${id}.button`)}
                     </button>
                   </Link>

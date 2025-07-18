@@ -13,7 +13,12 @@ function PrevArrow(props) {
   return (
     <button
       className={className}
-      style={{ ...style, display: "block", background: "transparent", border: "none" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "transparent",
+        border: "none",
+      }}
       onClick={onClick}
       aria-label="Previous"
     >
@@ -27,7 +32,12 @@ function NextArrow(props) {
   return (
     <button
       className={className}
-      style={{ ...style, display: "block", background: "transparent", border: "none" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "transparent",
+        border: "none",
+      }}
       onClick={onClick}
       aria-label="Next"
     >
@@ -76,7 +86,9 @@ export default function Products() {
       className="w-full min-h-screen py-12 flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
-        <h1 className="text-4xl font-bold mb-10 text-center">{t("products.title")}</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">
+          {t("products.title")}
+        </h1>
         <Slider {...settings}>
           {cards.map(({ id, image, link }) => (
             <div key={id} className="px-4">
@@ -111,7 +123,7 @@ export default function Products() {
                     </ul>
 
                     <Link href={link}>
-                      <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
+                      <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
                         {t(`products.cards.${id}.button`)}
                       </button>
                     </Link>
@@ -124,7 +136,7 @@ export default function Products() {
 
         <div className="flex justify-center mt-8">
           <Link href="/termekek">
-            <button className="mt-6 bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow transition duration-200">
+            <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
               {t("products.allProductsButton")}
             </button>
           </Link>

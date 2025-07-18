@@ -7,7 +7,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer id="contact" className="bg-white text-black border-t border-gray-200">
+    <footer id="contact" className="bg-gray-600 text-white border-t border-gray-700">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-lg font-semibold mb-4">{t("footer.navigation")}</h3>
@@ -51,7 +51,7 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-blue-600"
+              className="text-white hover:text-blue-400"
             >
               <FaFacebookF size={24} />
             </a>
@@ -59,7 +59,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-pink-500"
+              className="text-white hover:text-pink-400"
             >
               <FaInstagram size={24} />
             </a>
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-sm text-gray-500 py-4 border-t border-gray-200">
+      <div className="text-center text-sm text-gray-400 py-4 border-t border-gray-700">
         {t("footer.copyright", { year: new Date().getFullYear() })}
       </div>
     </footer>
