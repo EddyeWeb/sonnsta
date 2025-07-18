@@ -1,39 +1,54 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsTop(window.scrollY < 250);
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const linkClass = isTop
+    ? "text-white hover:text-gray-300 transition-colors duration-700 ease-in-out"
+    : "text-gray-800 hover:text-gray-900 transition-colors duration-700 ease-in-out";
 
   const menuItems = (
     <>
       <Link
         href="/#story"
-        className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
+        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
         onClick={() => setIsOpen(false)}
       >
         Történet
       </Link>
       <Link
         href="/#products"
-        className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
+        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
         onClick={() => setIsOpen(false)}
       >
         Termékek
       </Link>
       <Link
         href="/#gallery"
-        className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
+        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
         onClick={() => setIsOpen(false)}
       >
         Galéria
       </Link>
       <Link
         href="/#contact"
-        className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
+        className={`${linkClass} px-3 py-2 text-base font-karla font-medium`}
         onClick={() => setIsOpen(false)}
       >
         Kapcsolat
@@ -42,14 +57,22 @@ export default function Header() {
   );
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-700 ease-in-out ${
+        isTop
+          ? "bg-transparent"
+          : "bg-white/30 backdrop-blur-md shadow-md"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-2xl font-bold text-gray-900 tracking-wide font-karla"
+            className={`uppercase font-karla font-bold tracking-wide text-2xl transition-colors duration-700 ease-in-out ${
+              isTop ? "text-white" : "text-gray-900"
+            }`}
           >
-            <span className="text-2xl font-bold uppercase">Sønnsta</span>
+            <span>Sønnsta</span>
           </Link>
 
           <div className="hidden md:flex space-x-4 items-center">
@@ -59,7 +82,9 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
+              className={`transition-colors duration-700 ease-in-out ${
+                isTop ? "text-white" : "text-gray-600 hover:text-gray-900"
+              }`}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -68,7 +93,13 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 bg-white border-t border-gray-200 space-y-2 flex flex-col items-center">
+        <div
+          className={`md:hidden px-4 pb-4 border-t space-y-2 flex flex-col items-center transition-colors duration-700 ease-in-out ${
+            isTop
+              ? "bg-black/50 text-white border-gray-700"
+              : "bg-white/30 backdrop-blur-md border-gray-200 text-gray-700"
+          }`}
+        >
           {menuItems}
         </div>
       )}
