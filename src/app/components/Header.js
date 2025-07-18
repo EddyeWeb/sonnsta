@@ -67,10 +67,9 @@ export default function Header() {
     </>
   );
 
-  // Ez a háttér csak görgetés után lesz üveg hatású
   const navClasses = isLanding
     ? scrolled
-      ? "bg-white/70 backdrop-blur-md shadow-md"
+      ? "glass-navbar"
       : "bg-transparent shadow-none"
     : "bg-white shadow-md";
 
@@ -89,7 +88,9 @@ export default function Header() {
             <span className="uppercase">Sønnsta</span>
           </Link>
 
-          <div className="hidden md:flex space-x-4 items-center">{menuItems}</div>
+          <div className="hidden md:flex space-x-4 items-center">
+            {menuItems}
+          </div>
 
           <div className="md:hidden">
             <button
@@ -111,7 +112,7 @@ export default function Header() {
         <div
           className={`md:hidden px-4 pb-4 border-t space-y-2 flex flex-col items-center transition-colors duration-300 ${
             scrolled
-              ? "bg-white/70 backdrop-blur-md border-gray-200"
+              ? "glass-card border-gray-200"
               : "bg-transparent border-transparent"
           }`}
         >
