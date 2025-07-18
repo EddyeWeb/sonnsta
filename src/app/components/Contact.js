@@ -1,26 +1,42 @@
 "use client";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
 
 export default function Footer() {
-  const { t } = useTranslation();
-
   return (
-    <footer id="contact" className="bg-gray-600 text-white border-t border-gray-700">
+    <footer
+      id="contact"
+      className="bg-gray-600 text-white border-t border-gray-700"
+    >
       <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-lg font-semibold mb-4">{t("footer.navigation")}</h3>
+          <h3 className="text-lg font-semibold mb-4">Navigáció</h3>
           <ul className="space-y-2">
-            <li><a href="#top" className="hover:underline">{t("footer.home")}</a></li>
-            <li><a href="#products" className="hover:underline">{t("footer.products")}</a></li>
-            <li><a href="#gallery" className="hover:underline">{t("footer.gallery")}</a></li>
-            <li><a href="#contact" className="hover:underline">{t("footer.contact")}</a></li>
+            <li>
+              <a href="#top" className="hover:underline">
+                Sonnsta
+              </a>
+            </li>
+            <li>
+              <a href="#products" className="hover:underline">
+                Termékek
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" className="hover:underline">
+                Galéria
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline">
+                Kapcsolat
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4">{t("footer.contactInfo")}</h3>
+          <h3 className="text-lg font-semibold mb-4">Elérhetőségek</h3>
           <ul className="space-y-2">
             <li>
               <a href="tel:+36304171737" className="hover:underline">
@@ -28,7 +44,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:sonnsta.windows@gmail.com" className="hover:underline">
+              <a
+                href="mailto:sonnsta.windows@gmail.com"
+                className="hover:underline"
+              >
                 sonnsta.windows@gmail.com
               </a>
             </li>
@@ -46,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4">{t("footer.followUs")}</h3>
+          <h3 className="text-lg font-semibold mb-4">Kövess minket</h3>
           <div className="flex space-x-4">
             <a
               href="https://facebook.com"
@@ -69,7 +88,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-sm text-gray-400 py-4 border-t border-gray-700">
-        {t("footer.copyright", { year: new Date().getFullYear() })}
+        © {new Date().getFullYear()} Sonnsta. Minden jog fenntartva.
       </div>
     </footer>
   );

@@ -1,31 +1,12 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
-import { useTranslation } from "react-i18next";
-
-const TERMÉKEK = [
-  {
-    id: 1,
-    slug: "1-modulos-ablak",
-    image: "/S.jpg",
-  },
-  {
-    id: 2,
-    slug: "2-modulos-ablak",
-    image: "/M.jpg",
-  },
-  {
-    id: 3,
-    slug: "4-modulos-ablak",
-    image: "/L.jpg",
-  },
-];
+import { TERMÉKEK } from "../termekek/termekek-adatok";
 
 export default function TermekekPage() {
-  const { t } = useTranslation();
-
   return (
     <>
       <Header />
@@ -36,16 +17,16 @@ export default function TermekekPage() {
               href="/"
               className="inline-flex items-center hover:underline font-medium text-gray-700"
             >
-              ← {t("footer.home")}
+              ← Főoldal
             </Link>
           </div>
 
           <h1 className="text-4xl font-bold mb-12 text-center text-gray-900">
-            {t("products.title")}
+            Termékek
           </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {TERMÉKEK.map(({ id, slug, image }) => (
+            {Object.values(TERMÉKEK).map(({ id, slug, image, title, description, details, button }) => (
               <div
                 key={slug}
                 className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
@@ -53,7 +34,7 @@ export default function TermekekPage() {
                 <div className="relative w-full h-64">
                   <Image
                     src={image}
-                    alt={t(`products.cards.${id}.title`)}
+                    alt={title}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 33vw"
@@ -61,22 +42,16 @@ export default function TermekekPage() {
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
-                  <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                    {t(`products.cards.${id}.title`)}
-                  </h2>
-                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    {t(`products.cards.${id}.description`)}
-                  </p>
+                  <h2 className="text-2xl font-bold mb-4 text-gray-900">{title}</h2>
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">{description}</p>
                   <ul className="list-disc pl-5 text-gray-600 space-y-1 text-sm mb-6 flex-grow">
-                    {t(`products.cards.${id}.details`)
-                      .split("\n")
-                      .map((line, idx) => (
-                        <li key={idx}>{line}</li>
-                      ))}
+                    {details.map((line, idx) => (
+                      <li key={idx}>{line}</li>
+                    ))}
                   </ul>
                   <Link href={`/termekek/${slug}`}>
                     <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
-                      {t(`products.cards.${id}.button`)}
+                      {button}
                     </button>
                   </Link>
                 </div>

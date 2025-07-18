@@ -4,11 +4,9 @@ import Header from "../../components/Header";
 import Contact from "../../components/Contact";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 
 export default function ProductPageClient({ termek }) {
-  const { t } = useTranslation();
-  const { id, image } = termek;
+  const { image, title, description, details } = termek;
 
   return (
     <>
@@ -20,7 +18,7 @@ export default function ProductPageClient({ termek }) {
               href="/termekek"
               className="inline-flex items-center hover:underline font-medium text-gray-700"
             >
-              ← {t("products.allProductsButton")}
+              ← Összes termék
             </Link>
           </div>
 
@@ -29,7 +27,7 @@ export default function ProductPageClient({ termek }) {
               <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src={image}
-                  alt={t(`products.cards.${id}.title`)}
+                  alt={title}
                   fill
                   className="object-cover rounded-lg"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -39,20 +37,14 @@ export default function ProductPageClient({ termek }) {
             </div>
 
             <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-lg p-8 flex flex-col justify-center">
-              <h1 className="text-4xl font-bold mb-6 text-gray-900">
-                {t(`products.cards.${id}.title`)}
-              </h1>
+              <h1 className="text-4xl font-bold mb-6 text-gray-900">{title}</h1>
 
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                {t(`products.cards.${id}.description`)}
-              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">{description}</p>
 
               <ul className="list-disc pl-5 text-gray-600 space-y-2 mb-8">
-                {t(`products.cards.${id}.details`)
-                  .split("\n")
-                  .map((line, idx) => (
-                    <li key={idx}>{line}</li>
-                  ))}
+                {details.map((line, idx) => (
+                  <li key={idx}>{line}</li>
+                ))}
               </ul>
             </div>
           </div>

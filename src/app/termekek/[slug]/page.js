@@ -1,10 +1,5 @@
 import ProductPageClient from "./ProductPageClient";
-
-const TERMÉKEK = {
-  "1-modulos-ablak": { id: 1, image: "/S.jpg" },
-  "2-modulos-ablak": { id: 2, image: "/M.jpg" },
-  "4-modulos-ablak": { id: 3, image: "/L.jpg" },
-};
+import { TERMÉKEK } from "../termekek-adatok";
 
 export async function generateStaticParams() {
   return Object.keys(TERMÉKEK).map((slug) => ({ slug }));

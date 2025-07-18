@@ -1,12 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
-import i18n from "i18next";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -18,49 +15,29 @@ export default function Header() {
         className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
         onClick={() => setIsOpen(false)}
       >
-        {t("hero.story")}
+        Történet
       </Link>
       <Link
         href="/#products"
         className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
         onClick={() => setIsOpen(false)}
       >
-        {t("hero.products")}
+        Termékek
       </Link>
       <Link
         href="/#gallery"
         className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
         onClick={() => setIsOpen(false)}
       >
-        {t("hero.gallery")}
+        Galéria
       </Link>
       <Link
         href="/#contact"
         className="text-gray-500 hover:text-gray-700 px-3 py-2 text-base font-karla font-medium"
         onClick={() => setIsOpen(false)}
       >
-        {t("hero.contact")}
+        Kapcsolat
       </Link>
-      <div className="flex space-x-2 px-3 py-2">
-        <button
-          onClick={() => {
-            i18n.changeLanguage("en");
-            setIsOpen(false);
-          }}
-          className="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100"
-        >
-          🇬🇧 EN
-        </button>
-        <button
-          onClick={() => {
-            i18n.changeLanguage("hu");
-            setIsOpen(false);
-          }}
-          className="px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100"
-        >
-          🇭🇺 HU
-        </button>
-      </div>
     </>
   );
 

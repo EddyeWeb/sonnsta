@@ -1,5 +1,4 @@
 import "./globals.css";
-import "./lib/i18n.client.js";
 import { Karla } from 'next/font/google'
 
 export const metadata = {
