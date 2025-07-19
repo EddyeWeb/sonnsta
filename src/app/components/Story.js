@@ -8,8 +8,8 @@ export default function Story() {
         <div className="flex flex-col md:flex-row md:gap-12">
           <div className="relative w-full md:w-1/3 aspect-[3/4] md:aspect-auto md:min-h-[400px]">
             <Image
-              src="/gyula.jpg"
-              alt="Gyula portré"
+              src="/vasvari_gyula.jpg"
+              alt="Sønnsta portré"
               fill
               className="object-cover rounded-lg shadow-lg"
               priority
