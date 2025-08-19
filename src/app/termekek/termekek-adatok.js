@@ -6,8 +6,7 @@ export const TERMÉKEK = {
     slug: "1-modulos-ablak",
     image: "/S.jpg",
     title: "SØNNSTA S",
-    description:
-      "Egymodulos napfényablak – a legkompaktabb SØNNSTA-élmény\nTermészetes napfényhatás beltérben",
+    description: "Egymodulos napfényablak – a legkompaktabb SØNNSTA-élmény",
     details: [
       "Természetes napfényhatás beltérben",
       "Egymodulos rendszer – ideális kisebb terekbe, előszobába, fürdőszobába vagy dolgozósarokba",
@@ -23,7 +22,7 @@ export const TERMÉKEK = {
     image: "/M.jpg",
     title: "SØNNSTA M",
     description:
-      "Kétmodulos napfényablak – tökéletes egyensúly méret és hatás között\nTermészetes napfényhatás beltérben",
+      "Kétmodulos napfényablak – tökéletes egyensúly méret és hatás között",
     details: [
       "Természetes napfényhatás beltérben",
       "Kétmodulos rendszer – nappalikba, hálószobákba, irodákba ideális választás",
@@ -39,7 +38,7 @@ export const TERMÉKEK = {
     image: "/L.jpg",
     title: "SØNNSTA L",
     description:
-      "Négymodulos napfényablak – a lenyűgöző napfényélmény beltérben\nTermészetes napfényhatás beltérben",
+      "Négymodulos napfényablak – a lenyűgöző napfényélmény beltérben",
     details: [
       "Természetes napfényhatás beltérben",
       "Négymodulos rendszer – nagyobb terekbe, vendéglátóipari vagy wellness környezetbe ideális",

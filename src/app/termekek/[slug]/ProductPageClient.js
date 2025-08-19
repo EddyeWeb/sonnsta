@@ -6,7 +6,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductPageClient({ termek }) {
-  const { image, title, description, details } = termek;
+  const { image, title, description, details, price } = termek;
+
+  const renderSection = (title, items) => {
+    if (!items || items.length === 0) return null;
+    return (
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-gray-800">{title}</h2>
+        <ul className="list-disc pl-5 text-gray-600 space-y-2">
+          {items.map((line, idx) => (
+            <li key={idx}>{line}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -24,7 +38,7 @@ export default function ProductPageClient({ termek }) {
 
           <div className="w-full flex flex-col lg:flex-row gap-8">
             <div className="w-full lg:w-1/2">
-              <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+              <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl lg:sticky lg:top-20">
                 <Image
                   src={image}
                   alt={title}
@@ -39,13 +53,21 @@ export default function ProductPageClient({ termek }) {
             <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-lg p-8 flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-6 text-gray-900">{title}</h1>
 
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">{description}</p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                {description}
+              </p>
 
-              <ul className="list-disc pl-5 text-gray-600 space-y-2 mb-8">
-                {details.map((line, idx) => (
-                  <li key={idx}>{line}</li>
-                ))}
-              </ul>
+              {price && (
+                <p className="text-gray-700 text-lg mb-6">
+                  <strong>{price}</strong>
+                </p>
+              )}
+
+              {renderSection("Főbb jellemzők:", details.features)}
+              {renderSection("Műszaki adatok:", details.specs)}
+              {renderSection("Csomag tartalma:", details.package)}
+              {renderSection("Garancia és támogatás:", details.warranty)}
+              {renderSection("Ajánlott felhasználás:", details.usage)}
             </div>
           </div>
         </div>

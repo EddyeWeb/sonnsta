@@ -1,5 +1,7 @@
 "use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Story() {
   return (
@@ -21,20 +23,32 @@ export default function Story() {
               Természetes fényélmény, beltérben. SØNNSTA.
             </h3>
             <p className="text-gray-700 leading-relaxed text-lg mb-5">
-              A SØNNSTA egy különleges beltéri ablak, amely a természetes napfény látványát és hatását idézi meg ott, ahol valódi napfény nem érhető el. A fejlesztés célja az volt, hogy vizuálisan és érzetre is megtévesztően hiteles napfényélményt hozzon létre, mindezt energiatakarékosan, LED-alapú technológiával.
+              A SØNNSTA egy különleges beltéri ablak, amely a természetes
+              napfény látványát és hatását idézi meg ott, ahol valódi fényforrás
+              nem érhető el.A fejlesztés célja az volt, hogy olyan élményt
+              teremtsen, amely nemcsak fényt ad, hanem vizuális mélységi
+              perspektívát is: a termékbe épített innovatív technikai megoldás
+              tágas, napfényben fürdő tér hatását kelti, ezáltal pedig maximális
+              illúziót hoz létre.
             </p>
             <p className="text-gray-700 leading-relaxed text-lg mb-5">
-              A megoldás több éves kutatás és kísérletezés eredménye. A beépített prizmarendszer vizuális mélységérzetet ad, ezzel együtt pedig valódi napfényhatást kelt.
+              Ez teszi a SØNNSTA-t igazán egyedivé – a fény nemcsak világít,
+              hanem <strong>mélységet, hangulatot és inspirációt hoz</strong>{" "}
+              minden belső térbe.
             </p>
             <p className="text-gray-700 leading-relaxed text-lg mb-5">
-              És még ennél is többet: Jó hangulatot!
+              A SØNNSTA ma már szabadalommal védett innováció, amely lakásokban,
+              irodákban és professzionális környezetekben is újraértelmezi a
+              beltéri világítást.
             </p>
-            <p className="text-gray-700 leading-relaxed text-lg mb-5">
-              A SØNNSTA ma már szabadalommal védett innováció, amely lakásokban, irodákban és professzionális környezetben is újraértelmezi a beltéri világítást.
-            </p>
-            <strong className="text-gray-700 leading-relaxed text-lg mb-5">
+            <strong className="text-gray-700 leading-relaxed text-lg">
               SØNNSTA. Hiszed, ha látod.
             </strong>
+            <Link href="/tortenet">
+              <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
+                Bővebben
+              </button>
+            </Link>
           </div>
         </div>
       </div>
