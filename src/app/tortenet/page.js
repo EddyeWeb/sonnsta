@@ -21,7 +21,6 @@ export default function StoryPage() {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:gap-16 items-center">
-            {/* Kép */}
             <div className="relative w-full lg:w-2/5 aspect-[3/4] lg:aspect-auto lg:min-h-[400px] rounded-xl overflow-hidden shadow-lg">
               <Image
                 src="/vasvari_gyula.jpg"
@@ -32,17 +31,17 @@ export default function StoryPage() {
               />
             </div>
 
-            {/* Tartalom */}
             <div className="w-full lg:w-3/5 bg-gray-100 p-10 lg:p-12 rounded-xl shadow-lg flex flex-col justify-center mt-10 lg:mt-0">
               <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 A történet, ami fénybe fordult
               </h1>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                A SØNNSTA ötlete egy ablaktalan pinceszobából indult. Egy olyan
-                térből, ahol a természetes fény hiánya nap mint nap érezhető
-                volt – és ahol megszületett az igény egy ablakra, amely
-                valójában nincs, mégis teljesen valódinak tűnik.
+                Vasvári Gyula vagyok, a SØNNSTA ablakok megalkotója. A SØNNSTA
+                ötlete egy ablaktalan pinceszobából indult. Egy olyan térből,
+                ahol a természetes fény hiánya nap mint nap érezhető volt – és
+                ahol megszületett az igény egy ablakra, amely valójában nincs,
+                mégis teljesen valódinak tűnik.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -53,7 +52,7 @@ export default function StoryPage() {
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                A SØNNSTA lényege éppen ebben rejlik: a pár centiméteres
+                A SØNNSTA lényege éppen ebben rejlik: a pár centiméter mélységű
                 szerkezet mégis mélységet mutat, olyan, mintha egy valódi
                 ablakon át látnánk a külvilágot. Ez a vizuális perspektíva és a
                 hiteles napfényhatás együttese teszi a terméket különlegessé.
@@ -62,7 +61,8 @@ export default function StoryPage() {
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
                 Mára a SØNNSTA nem csupán egy személyes szükségletből született
                 ötlet, hanem egy szabadalommal védett innováció, amely bárhol
-                képes új távlatokat nyitni. Otthonokban, irodákban, közösségi
+                képes új távlatokat nyitni. Az egyedi megrendelésre gyártott,
+                kézzel készített SØNNSTA ablak otthonokban, irodákban, közösségi
                 vagy professzionális terekben ugyanazt az élményt adja: a
                 napfényt ott, ahol eddig lehetetlen volt.
               </p>
