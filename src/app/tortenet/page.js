@@ -23,7 +23,7 @@ export default function StoryPage() {
           <div className="flex flex-col lg:flex-row lg:gap-16 items-center">
             <div className="relative w-full lg:w-2/5 aspect-[3/4] lg:aspect-auto lg:min-h-[400px] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="./vasvari_gyula.jpg"
+                src="/vasvari_gyula.jpg"
                 alt="Sønnsta portré"
                 fill
                 className="object-cover"

@@ -3,7 +3,7 @@ import ProductPageClient from "./ProductPageClient";
 const TERMÉKEK = {
   "1-modulos-ablak": {
     id: 1,
-    image: "./S.jpg",
+    image: "/S.jpg",
     title: "Egymodulos napfényablak",
     description:
       "A SØNNSTA S a legkompaktabb modell, amely egyetlen modullal is képes megidézni a természetes napfényt. Ideális választás kisebb terekbe – előszobákba, fürdőszobákba vagy dolgozósarokba –, ahol valódi ablak nincs, mégis szükség van világosságra és inspiráló térélményre.",
@@ -43,7 +43,7 @@ const TERMÉKEK = {
   },
   "2-modulos-ablak": {
     id: 2,
-    image: "./M.jpg",
+    image: "/M.jpg",
     title: "SØNNSTA M",
     description:
       "A SØNNSTA M a legnépszerűbb modell: két modulja tökéletes egyensúlyt kínál a kompakt méret és a látványos napfényhatás között. Nappalikba, hálószobákba és irodákba is ideális, ahol a tér tágasabbá és világosabbá válhat.",
@@ -83,7 +83,7 @@ const TERMÉKEK = {
   },
   "4-modulos-ablak": {
     id: 3,
-    image: "./L.jpg",
+    image: "/L.jpg",
     title: "SØNNSTA L",
     description:
       "A SØNNSTA L a legnagyobb modell, amely négymodulos kialakításával lenyűgöző napfényélményt nyújt. Nagyobb belső terek, vendéglátóhelyek, wellness-központok vagy exkluzív enteriőrök ideális kiegészítője.",
