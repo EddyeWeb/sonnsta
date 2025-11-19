@@ -4,7 +4,7 @@ export const TERMÉKEK = {
   "1-modulos-ablak": {
     id: 1,
     slug: "1-modulos-ablak",
-    image: "/S.jpg",
+    image: "./S.jpg",
     title: "SØNNSTA S",
     description: "Egymodulos napfényablak – a legkompaktabb SØNNSTA-élmény",
     details: [
@@ -19,7 +19,7 @@ export const TERMÉKEK = {
   "2-modulos-ablak": {
     id: 2,
     slug: "2-modulos-ablak",
-    image: "/M.jpg",
+    image: "./M.jpg",
     title: "SØNNSTA M",
     description:
       "Kétmodulos napfényablak – tökéletes egyensúly méret és hatás között",
@@ -35,7 +35,7 @@ export const TERMÉKEK = {
   "4-modulos-ablak": {
     id: 3,
     slug: "4-modulos-ablak",
-    image: "/L.jpg",
+    image: "./L.jpg",
     title: "SØNNSTA L",
     description:
       "Négymodulos napfényablak – a lenyűgöző napfényélmény beltérben",

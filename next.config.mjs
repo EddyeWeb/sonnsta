@@ -5,6 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  assetPrefix: '.',
 };
 
 export default nextConfig;

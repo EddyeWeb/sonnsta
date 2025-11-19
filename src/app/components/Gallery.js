@@ -10,8 +10,8 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 const images = Array.from({ length: 9 }).map((_, i) => {
   const num = i + 1;
   return {
-    src: `/gallery/${num}.jpg`,
-    thumbnail: `/gallery/${num}.jpg`,
+    src: `./gallery/${num}.jpg`,
+    thumbnail: `./gallery/${num}.jpg`,
   };
 });
 

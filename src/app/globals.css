@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --font-karla: "Karla", system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-karla);
+}
+
+.font-karla {
+  font-family: var(--font-karla);
 }
 
 .slick-prev:before,

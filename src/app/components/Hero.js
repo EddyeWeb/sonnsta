@@ -22,7 +22,7 @@ export default function Hero() {
     <div
       className="relative w-full h-screen bg-cover bg-center"
       style={{
-        backgroundImage: 'url("/hero.jpg")',
+        backgroundImage: 'url("./hero.jpg")',
         backgroundAttachment: "fixed",
       }}
     >
