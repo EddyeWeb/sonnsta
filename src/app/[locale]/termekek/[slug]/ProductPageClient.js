@@ -4,8 +4,10 @@ import Header from "../../components/Header";
 import Contact from "../../components/Contact";
 import Image from "next/image";
 import Link from "next/link";
+import { useDictionary } from "../../providers/DictionaryProvider";
 
 export default function ProductPageClient({ termek }) {
+  const { dict, locale } = useDictionary();
   const { image, title, description, details, price } = termek;
 
   const renderSection = (title, items) => {
@@ -29,10 +31,10 @@ export default function ProductPageClient({ termek }) {
         <div className="container mx-auto">
           <div className="mb-8">
             <Link
-              href="/termekek"
+              href={`/${locale}/termekek`}
               className="inline-flex items-center hover:underline font-medium text-gray-700"
             >
-              ← Összes termék
+              ← {dict.main_sections.all_products}
             </Link>
           </div>
 
@@ -59,15 +61,36 @@ export default function ProductPageClient({ termek }) {
 
               {price && (
                 <p className="text-gray-700 text-lg mb-6">
-                  <strong>{price}</strong>
+                  <strong>
+                    {dict.common_values.price}
+                    {` `}
+                    {price}
+                    {` `}
+                    {dict.common_values.currency_huf}
+                  </strong>
                 </p>
               )}
 
-              {renderSection("Főbb jellemzők:", details.features)}
-              {renderSection("Műszaki adatok:", details.specs)}
-              {renderSection("Csomag tartalma:", details.package)}
-              {renderSection("Garancia és támogatás:", details.warranty)}
-              {renderSection("Ajánlott felhasználás:", details.usage)}
+              {renderSection(
+                dict.common_values.key_features_label,
+                details.features
+              )}
+              {renderSection(
+                dict.common_values.technical_data_label,
+                details.specs
+              )}
+              {renderSection(
+                dict.common_values.package_contents_label,
+                details.package
+              )}
+              {renderSection(
+                dict.common_values.warranty_label,
+                details.warranty
+              )}
+              {renderSection(
+                dict.common_values.recommended_use_label,
+                details.usage
+              )}
             </div>
           </div>
         </div>

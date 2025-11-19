@@ -4,10 +4,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useDictionary } from "../providers/DictionaryProvider";
+import { LanguageToggle } from "./LanguageToggle";
 
 export default function Header() {
+  const { dict, locale } = useDictionary();
   const pathname = usePathname();
-  const isLanding = pathname === "/";
+  const isLanding =
+    pathname === "/hu" ||
+    pathname === "/hu/" ||
+    pathname === "/en" ||
+    pathname === "/en/" ||
+    pathname === "/";
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -37,33 +45,34 @@ export default function Header() {
   const menuItems = (
     <>
       <Link
-        href="/#story"
+        href={`/${locale}#story`}
         className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
-        Történet
+        {dict.main_sections.story_label}
       </Link>
       <Link
-        href="/#products"
+        href={`/${locale}#products`}
         className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
-        Termékek
+        {dict.main_sections.products_label}
       </Link>
       <Link
-        href="/#gallery"
+        href={`/${locale}#gallery`}
         className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
-        Galéria
+        {dict.main_sections.gallery_label}
       </Link>
       <Link
-        href="/#contact"
+        href={`/${locale}#contact`}
         className={`${linkBaseClasses} ${linkColorClasses}`}
         onClick={() => setIsOpen(false)}
       >
-        Kapcsolat
+        {dict.main_sections.contact_label}
       </Link>
+      <LanguageToggle className={`${linkBaseClasses} ${linkColorClasses}`} />
     </>
   );
 
@@ -80,7 +89,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
-            href="/"
+            href={`/${locale}`}
             className={`text-2xl font-bold tracking-wide font-karla transition-colors duration-300 ${
               isLanding && !scrolled ? "text-white" : "text-gray-900"
             }`}
@@ -100,7 +109,7 @@ export default function Header() {
                   ? "text-white hover:text-gray-300"
                   : "text-gray-600 hover:text-gray-900"
               }`}
-              aria-label="Toggle menu"
+              aria-label={dict.main_sections.toggle_menu}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

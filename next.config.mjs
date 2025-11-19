@@ -4,8 +4,8 @@ const nextConfig = {
     domains: ["picsum.photos", "images.unsplash.com"],
     unoptimized: true,
   },
-  output: 'export',
-  assetPrefix: '.',
+  output: "export",
+  //assetPrefix: '.',
 };
 
 export default nextConfig;

@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { useDictionary } from "../providers/DictionaryProvider";
 
 export default function Footer() {
+  const { dict, locale } = useDictionary();
   return (
     <footer
       id="contact"
@@ -11,33 +13,37 @@ export default function Footer() {
     >
       <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-lg font-semibold mb-4">Navigáció</h3>
+          <h3 className="text-lg font-semibold mb-4">
+            {dict.main_sections.navigation_label}
+          </h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/#top" className="hover:underline">
-                Sonnsta
+              <Link href={`/${locale}/#top`} className="hover:underline">
+                {dict.main_sections.story_label}
               </Link>
             </li>
             <li>
-              <Link href="/#products" className="hover:underline">
-                Termékek
+              <Link href={`/${locale}/#products`} className="hover:underline">
+                {dict.main_sections.products_label}
               </Link>
             </li>
             <li>
-              <Link href="/#gallery" className="hover:underline">
-                Galéria
+              <Link href={`/${locale}/#gallery`} className="hover:underline">
+                {dict.main_sections.gallery_label}
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="hover:underline">
-                Kapcsolat
+              <Link href={`/${locale}/#contact`} className="hover:underline">
+                {dict.main_sections.contact_label}
               </Link>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4">Elérhetőségek</h3>
+          <h3 className="text-lg font-semibold mb-4">
+            {dict.main_sections.contact_label}
+          </h3>
           <ul className="space-y-2">
             <li>
               <a href="tel:+36304171737" className="hover:underline">
@@ -65,7 +71,9 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Kövess minket</h3>
+          <h3 className="text-lg font-semibold mb-4">
+            {dict.main_sections.follow_us_label}
+          </h3>
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/profile.php?id=61557242503375"
@@ -88,7 +96,9 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-sm text-gray-400 py-4 border-t border-gray-700">
-        © {new Date().getFullYear()} Sonnsta. Minden jog fenntartva.
+        © {new Date().getFullYear()}
+        {` `}
+        {dict.footer.copyright}
       </div>
     </footer>
   );

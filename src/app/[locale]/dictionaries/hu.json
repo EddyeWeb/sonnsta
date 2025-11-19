@@ -1,0 +1,195 @@
+{
+  "brand_name": "SØNNSTA",
+  "tagline_short": "Hiszed, ha látod.",
+  "main_sections": {
+    "story_label": "Történet",
+    "hero_subtitle": "Természetes fényélmény, beltérben. SØNNSTA.",
+    "hero_intro": "Vasvári Gyula vagyok, a SØNNSTA ablakok megalkotója. A SØNNSTA egy különleges beltéri ablak, amely a természetes napfény látványát és hatását idézi meg ott, ahol valódi fényforrás nem érhető el. A fejlesztés célja az volt, hogy olyan élményt teremtsen, amely nemcsak fényt ad, hanem vizuális mélységi perspektívát is: a termékbe épített innovatív technikai megoldás tágas, napfényben fürdő tér hatását kelti, ezáltal pedig maximális illúziót hoz létre.",
+    "hero_uniqueness": "Ez teszi a kézzel készített, egyedi megrendelésre gyártott SØNNSTA-t igazán egyedivé – a fény nemcsak világít, hanem",
+    "hero_uniqueness_bold": "mélységet, hangulatot és inspirációt hoz",
+    "hero_uniqueness_bold_after": "minden belső térbe.",
+    "hero_patent": "A SØNNSTA ablak ma már szabadalommal védett innováció, amely lakásokban, irodákban és professzionális környezetekben is újraértelmezi a beltéri világítást.",
+    "tagline_full": "Hiszed, ha látod.",
+    "cta_see_more": "See more…",
+    "story_title": "A történet, ami fénybe fordult",
+    "story_intro": "Vasvári Gyula vagyok, a SØNNSTA ablakok megalkotója. A SØNNSTA ötlete egy ablaktalan pinceszobából indult. Egy olyan térből, ahol a természetes fény hiánya nap mint nap érezhető volt – és ahol megszületett az igény egy ablakra, amely valójában nincs, mégis teljesen valódinak tűnik.",
+    "story_development": "Ez a belső motiváció indította el a több éves fejlesztést és kísérletezést. A cél nem pusztán egy lámpa megalkotása volt, hanem egy olyan vizuális élmény megteremtése, amely a napfényt nemcsak fényként, hanem hangulatként és térként is visszaadja.",
+    "story_essence": "A SØNNSTA lényege éppen ebben rejlik: a pár centiméter mélységű szerkezet mégis mélységet mutat, olyan, mintha egy valódi ablakon át látnánk a külvilágot. Ez a vizuális perspektíva és a hiteles napfényhatás együttese teszi a terméket különlegessé.",
+    "story_today": "Mára a SØNNSTA nem csupán egy személyes szükségletből született ötlet, hanem egy szabadalommal védett innováció, amely bárhol képes új távlatokat nyitni. Az egyedi megrendelésre gyártott, kézzel készített SØNNSTA ablak otthonokban, irodákban, közösségi vagy professzionális terekben ugyanazt az élményt adja: a napfényt ott, ahol eddig lehetetlen volt.",
+    "products_label": "Termékek",
+    "gallery_label": "Galéria",
+    "contact_label": "Kapcsolat",
+    "toggle_menu": "Menü előhívása",
+    "all_products": "Összes termék",
+    "navigation_label": "Navigáció",
+    "follow_us_label": "Kövess minket"
+  },
+  "products": {
+    "S": {
+      "name": "SØNNSTA S",
+      "subtitle": "Egymodulos napfényablak – a legkompaktabb SØNNSTA-élmény",
+      "list_preview_bullets": [
+        "Természetes napfényhatás beltérben",
+        "Egymodulos rendszer – ideális kisebb terekbe, előszobába, fürdőszobába vagy dolgozósarokba",
+        "Fogyasztás: 20 Watt",
+        "Valódi napfény színhőmérséklet és fénydinamika",
+        "Egyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
+      ],
+      "title": "Egymodulos napfényablak",
+      "description": "A SØNNSTA S a legkompaktabb modell, amely egyetlen modullal is képes megidézni a természetes napfényt. Ideális választás kisebb terekbe – előszobákba, fürdőszobákba vagy dolgozósarokba –, ahol valódi ablak nincs, mégis szükség van világosságra és inspiráló térélményre.",
+
+      "key_features": [
+        "Természetes napfényhatás beltérben – a fény karaktere a valódi napfény élményét idézi.",
+        "Egymodulos rendszer – kompakt, helytakarékos kivitel.",
+        "Fogyasztás: 20 Watt – alacsony energiaigény.",
+        "Állítható fényerő – manuálisan és okostelefonról is vezérelhető dimmelési lehetőség.",
+        "Egyszerű telepítés – 12 V-os tápellátással, falra akasztható kivitelben."
+      ],
+      "technical_data": [
+        "Méretek: kb. 57 cm × 52 cm × 3,5 cm",
+        "Energiaellátás: 12 V DC adapter (tartozék)",
+        "Fényforrás: nagy hatékonyságú LED-ek",
+        "Fogyasztás: 20 W",
+        "Színhőmérséklet: a természetes napfény tartományában"
+      ],
+      "package_contents": [
+        "SØNNSTA S egység",
+        "12 V tápegység",
+        "Rögzítőelemek",
+        "Rövid telepítési útmutató"
+      ],
+      "warranty": [
+        "2 év gyártói garancia",
+        "Magyar nyelvű ügyfélszolgálat és szerviz"
+      ],
+      "recommended_use": [
+        "Előszoba vagy folyosó",
+        "Fürdőszoba",
+        "Dolgozósarok vagy kisebb irodahelyiség",
+        "Olyan terek, ahol nincs természetes fény"
+      ]
+    },
+    "M": {
+      "name": "SØNNSTA M",
+      "subtitle": "Kétmodulos napfényablak – tökéletes egyensúly méret és hatás között",
+      "list_preview_bullets": [
+        "Természetes napfényhatás beltérben",
+        "Kétmodulos rendszer – nappalikba, hálószobákba, irodákba ideális választás",
+        "Fogyasztás: 40 Watt",
+        "Valódi napfény színhőmérséklet és fénydinamika",
+        "Egyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
+      ],
+      "title": "SØNNSTA M",
+      "description": "A SØNNSTA M a legnépszerűbb modell: két modulja tökéletes egyensúlyt kínál a kompakt méret és a látványos napfényhatás között. Nappalikba, hálószobákba és irodákba is ideális, ahol a tér tágasabbá és világosabbá válhat.",
+      "price": "Price: 199,900 HUF",
+      "key_features": [
+        "Természetes napfényhatás beltérben – élethű fény és vizuális térélmény.",
+        "Kétmodulos rendszer – látványosabb, erőteljesebb fényhatás, közepes méretű terekhez.",
+        "Fogyasztás: 40 Watt – energiatakarékos működés.",
+        "Állítható fényerő – manuálisan és okostelefonról is vezérelhető dimmelési lehetőség.",
+        "Egyszerű telepítés – 12 V-os tápellátással, falra akasztható kivitelben."
+      ],
+      "technical_data": [
+        "Méretek: kb. 57 cm × 97 cm × 3,5 cm",
+        "Energiaellátás: 12 V DC adapter (tartozék)",
+        "Fényforrás: nagy hatékonyságú LED-ek",
+        "Fogyasztás: 40 W",
+        "Színhőmérséklet: a természetes napfény tartományában"
+      ],
+      "package_contents": [
+        "SØNNSTA M egység",
+        "12 V tápegység",
+        "Rögzítőelemek",
+        "Rövid telepítési útmutató"
+      ],
+      "warranty": [
+        "2 év gyártói garancia",
+        "Magyar nyelvű ügyfélszolgálat és szerviz"
+      ],
+      "recommended_use": [
+        "Nappali",
+        "Hálószoba",
+        "Dolgozószoba, irodák",
+        "Kisebb közösségi terek"
+      ]
+    },
+    "L": {
+      "name": "SØNNSTA L",
+      "subtitle": "Négymodulos napfényablak – a lenyűgöző napfényélmény beltérben",
+      "list_preview_bullets": [
+        "Természetes napfényhatás beltérben",
+        "Négymodulos rendszer – nagyobb terekbe, vendéglátóipari vagy wellness környezetbe ideális",
+        "Fogyasztás: 80 Watt",
+        "Valódi napfény színhőmérséklet és fénydinamika",
+        "Egyszerű telepítés: 12V-os tápellátás, falra akasztható kivitel"
+      ],
+      "title": "SØNNSTA L",
+      "description": "A SØNNSTA L a legnagyobb modell, amely négymodulos kialakításával lenyűgöző napfényélményt nyújt. Nagyobb belső terek, vendéglátóhelyek, wellness-központok vagy exkluzív enteriőrök ideális kiegészítője.",
+      "price": "Price: 399,900 HUF",
+      "key_features": [
+        "Természetes napfényhatás beltérben – nagyméretű, élethű fényélmény.",
+        "Négymodulos rendszer – erőteljes fényhatás nagyobb terekhez.",
+        "Fogyasztás: 80 Watt – hatékony energiafelhasználás.",
+        "Állítható fényerő – manuálisan és okostelefonról is vezérelhető dimmelési lehetőség.",
+        "Egyszerű telepítés – 12 V-os tápellátással, falra akasztható kivitelben."
+      ],
+      "technical_data": [
+        "Méretek: kb. 107 cm × 97 cm × 3,5 cm",
+        "Energiaellátás: 12 V DC adapter (tartozék)",
+        "Fényforrás: nagy hatékonyságú LED-ek",
+        "Fogyasztás: 80 W",
+        "Színhőmérséklet: a természetes napfény tartományában"
+      ],
+      "package_contents": [
+        "SØNNSTA L egység",
+        "12 V tápegység",
+        "Rögzítőelemek",
+        "Rövid telepítési útmutató"
+      ],
+      "warranty": [
+        "2 év gyártói garancia",
+        "Magyar nyelvű ügyfélszolgálat és szerviz"
+      ],
+      "recommended_use": [
+        "Tágas nappali",
+        "Vendéglátóhelyek",
+        "Wellness és relaxációs terek",
+        "Exkluzív irodák vagy közösségi terek"
+      ]
+    }
+  },
+  "footer": {
+    "gallery_label": "Gallery",
+    "contact_label": "Contact",
+    "phone": "+36 30 417 1737",
+    "email_raw": "[sonnsta.windows@gmail.com](mailto:sonnsta.windows@gmail.com)",
+    "address": "4225 Debrecen, Pál u. 24.",
+    "follow_us_label": "Follow us",
+    "copyright": "Sonnsta. Minden jog fenntartva."
+  },
+  "common_values": {
+    "details_button": "Részletek",
+    "see_more": "Bővebben",
+    "price": "Ár:",
+    "currency_huf": "Ft",
+    "key_features_label": "Főbb jellemzők:",
+    "technical_data_label": "Műszaki adatok:",
+    "package_contents_label": "Csomag tartalma:",
+    "warranty_label": "Garancia és támogatás:",
+    "recommended_use_label": "Ajánlott felhasználás:",
+    "tagline_short": "Seeing is believing.",
+    "tagline_full": "SØNNSTA. Seeing is believing.",
+    "cta_see_more": "See more…",
+    "homepage_label": "Főoldal",
+    "no_products_found": "Termék nem található",
+    "generic_bullets": [
+      "Natural sunlight effect indoors",
+      "Real sunlight color temperature and light dynamics",
+      "Easy installation: 12V power supply, wall-mountable design",
+      "2-year manufacturer's warranty",
+      "English language customer service and support",
+      "Color temperature: in the range of natural sunlight",
+      "Light source: high-efficiency LEDs"
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "brand_name": "SØNNSTA",
+  "tagline_short": "Seeing is believing.",
+  "main_sections": {
+    "story_label": "Story",
+    "hero_subtitle": "Natural light experience, indoors. SØNNSTA.",
+    "hero_intro": "My name is Gyula Vasvári, creator of SØNNSTA windows. SØNNSTA is a special indoor window that evokes the sight and effect of natural sunlight in places where a real light source is not available. The aim of the development was to create an experience that not only provides light, but also visual depth perspective: the innovative technical solution built into the product creates the effect of a spacious, sun-drenched space, thus creating maximum illusion.",
+    "hero_uniqueness": "This is what makes the handmade, custom-made SØNNSTA truly unique – the light not only illuminates, but also",
+    "hero_uniqueness_bold": "brings depth, atmosphere and inspiration",
+    "hero_uniqueness_bold_after": "to any interior space.",
+    "hero_patent": "The SØNNSTA window is now a patented innovation that redefines interior lighting in homes, offices and professional environments.",
+    "tagline_full": "Seeing is believing.",
+    "cta_see_more": "See more…",
+    "story_title": "The story that turned into light",
+    "story_intro": "My name is Gyula Vasvári, creator of SØNNSTA windows. The idea for SØNNSTA started in a windowless basement room. A space where the lack of natural light was felt every day – and where the need arose for a window that isn't really there, yet seems completely real.",
+    "story_development": "This inner motivation sparked years of development and experimentation. The goal was not simply to create a lamp, but to create a visual experience that would reflect sunlight not only as light, but also as mood and space.",
+    "story_essence": "This is the essence of SØNNSTA: the structure, which is only a few centimeters thick, still appears to have depth, as if we were looking at the outside world through a real window. It is this combination of visual perspective and authentic sunlight effect that makes the product so special.",
+    "story_today": "Today, SØNNSTA is not just an idea born out of personal need, but a patented innovation that can open up new perspectives anywhere. Custom-made and handcrafted, SØNNSTA windows provide the same experience in homes, offices, community or professional spaces: sunlight where it was previously impossible.",
+    "products_label": "Products",
+    "gallery_label": "Gallery",
+    "contact_label": "Contact",
+    "toggle_menu": "Toggle menu",
+    "all_products": "All products",
+    "navigation_label": "Navigation",
+    "follow_us_label": "Follow us"
+  },
+  "products": {
+    "S": {
+      "name": "SØNNSTA S",
+      "subtitle": "Single-module window – the most compact SØNNSTA experience",
+      "list_preview_bullets": [
+        "Natural sunlight effect indoors",
+        "Single-module system – ideal for smaller spaces, hallways, bathrooms, or work areas",
+        "Power consumption: 20 watts",
+        "Real sunlight color temperature and light dynamics",
+        "Easy installation: 12V power supply, wall-mountable design"
+      ],
+      "title": "Single-module window",
+      "description": "SØNNSTA S is the most compact model, capable of conjuring natural sunlight with a single module. It is the ideal choice for smaller spaces – hallways, bathrooms, or work areas – where there are no real windows but light and an inspiring spatial experience are still needed.",
+      "key_features": [
+        "Natural sunlight effect indoors – the character of the light evokes the experience of real sunlight.",
+        "Single-module system – compact, space-saving design.",
+        "Power consumption: 20 watts – low energy requirements.",
+        "Adjustable brightness – dimming can be controlled manually or via smartphone.",
+        "Easy installation – 12 V power supply, wall-mountable design."
+      ],
+      "technical_data": [
+        "Dimensions: approx. 57 cm × 52 cm × 3.5 cm",
+        "Power supply: 12 V DC adapter (included)",
+        "Light source: high-efficiency LEDs",
+        "Power consumption: 20 W",
+        "Color temperature: in the range of natural sunlight"
+      ],
+      "package_contents": [
+        "SØNNSTA S unit",
+        "12 V power supply",
+        "Mounting hardware",
+        "Quick installation guide"
+      ],
+      "warranty": [
+        "2-year manufacturer's warranty",
+        "English language customer service and support"
+      ],
+      "recommended_use": [
+        "Hallway or corridor",
+        "Bathroom",
+        "Work corner or small office",
+        "Spaces without natural light"
+      ]
+    },
+    "M": {
+      "name": "SØNNSTA M",
+      "subtitle": "Two-module window – the perfect balance between size and effect",
+      "list_preview_bullets": [
+        "Natural sunlight effect indoors",
+        "Two-module system – ideal for living rooms, bedrooms, and offices",
+        "Power consumption: 40 watts",
+        "Real sunlight color temperature and light dynamics",
+        "Easy installation: 12V power supply, wall-mountable design"
+      ],
+      "title": "SØNNSTA M",
+      "description": "SØNNSTA M is the most popular model: its two modules offer the perfect balance between compact size and spectacular sunlight effect. Ideal for living rooms, bedrooms, and offices, where it can make the space feel more spacious and brighter.",
+      "price": "Price: 199,900 HUF",
+      "key_features": [
+        "Natural sunlight effect indoors – realistic light and visual space experience.",
+        "Two-module system – more spectacular, powerful lighting effect, for medium-sized spaces.",
+        "Power consumption: 40 watts – energy-efficient operation.",
+        "Adjustable brightness – dimming can be controlled manually or via smartphone.",
+        "Easy installation – 12 V power supply, wall-mountable design."
+      ],
+      "technical_data": [
+        "Dimensions: approx. 57 cm × 97 cm × 3.5 cm",
+        "Power supply: 12 V DC adapter (included)",
+        "Light source: high-efficiency LEDs",
+        "Power consumption: 40 W",
+        "Color temperature: in the range of natural sunlight"
+      ],
+      "package_contents": [
+        "SØNNSTA M unit",
+        "12 V power supply",
+        "Mounting elements",
+        "Quick installation guide"
+      ],
+      "warranty": [
+        "2-year manufacturer's warranty",
+        "English language customer service and support"
+      ],
+      "recommended_use": [
+        "Living room",
+        "Bedroom",
+        "Study, offices",
+        "Small communal areas"
+      ]
+    },
+    "L": {
+      "name": "SØNNSTA L",
+      "subtitle": "Four-module window – The impressive sun experience indoors",
+      "list_preview_bullets": [
+        "Natural sunlight effect indoors",
+        "Four-module system – ideal for larger spaces, hospitality or wellness environments",
+        "Power consumption: 80 watts",
+        "Real sunlight color temperature and light dynamics",
+        "Easy installation: 12V power supply, wall-mountable design"
+      ],
+      "title": "SØNNSTA L",
+      "description": "SØNNSTA L is the largest model, offering an impressive sunlight experience with its four-module design. It is the ideal addition to larger interior spaces, hospitality venues, wellness centers, or exclusive interiors.",
+      "price": "Price: 399,900 HUF",
+      "key_features": [
+        "Natural sunlight effect indoors – large, realistic lighting experience.",
+        "Four-module system – powerful lighting effect for larger spaces.",
+        "Power consumption: 80 watts – efficient energy use.",
+        "Adjustable brightness – dimming can be controlled manually or via smartphone.",
+        "Easy installation – 12 V power supply, wall-mountable design."
+      ],
+      "technical_data": [
+        "Dimensions: approx. 107 cm × 97 cm × 3.5 cm",
+        "Power supply: 12 V DC adapter (included)",
+        "Light source: high-efficiency LEDs",
+        "Power consumption: 80 W",
+        "Color temperature: in the range of natural sunlight"
+      ],
+      "package_contents": [
+        "SØNNSTA L unit",
+        "12 V power supply",
+        "Mounting elements",
+        "Quick installation guide"
+      ],
+      "warranty": [
+        "2-year manufacturer's warranty",
+        "English language customer service and support"
+      ],
+      "recommended_use": [
+        "Spacious living rooms",
+        "Catering establishments",
+        "Wellness and relaxation areas",
+        "Exclusive offices or communal areas"
+      ]
+    }
+  },
+  "footer": {
+    "gallery_label": "Gallery",
+    "contact_label": "Contact",
+    "phone": "+36 30 417 1737",
+    "email_raw": "[sonnsta.windows@gmail.com](mailto:sonnsta.windows@gmail.com)",
+    "address": "4225 Debrecen, Pál u. 24.",
+    "follow_us_label": "Follow us",
+    "copyright": "Sonnsta. All rights reserved."
+  },
+  "common_values": {
+    "details_button": "Details",
+    "see_more": "See more...",
+    "price": "Price:",
+    "currency_huf": "HUF",
+    "key_features_label": "Key features:",
+    "technical_data_label": "Technical data:",
+    "package_contents_label": "Package contents:",
+    "warranty_label": "Warranty and support:",
+    "recommended_use_label": "Recommended use:",
+    "tagline_short": "Seeing is believing.",
+    "tagline_full": "SØNNSTA. Seeing is believing.",
+    "cta_see_more": "See more…",
+    "homepage_label": "Home page",
+    "no_products_found": "No products found",
+    "generic_bullets": [
+      "Natural sunlight effect indoors",
+      "Real sunlight color temperature and light dynamics",
+      "Easy installation: 12V power supply, wall-mountable design",
+      "2-year manufacturer's warranty",
+      "English language customer service and support",
+      "Color temperature: in the range of natural sunlight",
+      "Light source: high-efficiency LEDs"
+    ]
+  }
+}

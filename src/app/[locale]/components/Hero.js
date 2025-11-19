@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useDictionary } from "../providers/DictionaryProvider";
 
 export default function Hero() {
+  const { dict } = useDictionary();
   const [overlayOpacity, setOverlayOpacity] = useState(0.8);
 
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function Hero() {
     <div
       className="relative w-full h-screen bg-cover bg-center"
       style={{
-        backgroundImage: 'url("./hero.jpg")',
+        backgroundImage: 'url("/hero.jpg")',
         backgroundAttachment: "fixed",
       }}
     >
@@ -34,7 +36,7 @@ export default function Hero() {
         <h2 className="text-white text-5xl md:text-6xl font-bold text-center max-w-4xl">
           <p>SØNNSTA</p>
           <br />
-          Hiszed, ha látod.
+          {dict.main_sections.tagline_full}
         </h2>
       </div>
     </div>

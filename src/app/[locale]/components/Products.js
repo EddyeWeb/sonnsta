@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { TERMÉKEK } from "../termekek/termekek-adatok";
+import { getPreviewTermekek } from "../termekek/termekek-adatok";
+import { useDictionary } from "../providers/DictionaryProvider";
 
 function PrevArrow(props) {
   const { className, onClick, style } = props;
@@ -48,7 +49,8 @@ function NextArrow(props) {
 }
 
 export default function Products() {
-  const cards = Object.values(TERMÉKEK); // egységes adatforrásból
+  const { dict, locale } = useDictionary();
+  const cards = Object.values(getPreviewTermekek(dict)); // egységes adatforrásból
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -85,7 +87,9 @@ export default function Products() {
       className="w-full min-h-screen py-8 sm:py-12 flex items-center justify-center bg-gray-100"
     >
       <div className="w-full max-w-7xl px-4 sm:px-8">
-        <h1 className="text-4xl font-bold mb-10 text-center">Termékek</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">
+          {dict.main_sections.products_label}
+        </h1>
         <Slider {...settings}>
           {cards.map(
             ({ id, image, slug, title, description, details, button }) => (
@@ -118,7 +122,7 @@ export default function Products() {
                         ))}
                       </ul>
 
-                      <Link href={`/termekek/${slug}`}>
+                      <Link href={`/${locale}/termekek/${slug}`}>
                         <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
                           {button}
                         </button>
@@ -132,9 +136,9 @@ export default function Products() {
         </Slider>
 
         <div className="flex justify-center mt-8">
-          <Link href="/termekek">
+          <Link href={`/${locale}/termekek`}>
             <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
-              Összes termék
+              {dict.main_sections.all_products}
             </button>
           </Link>
         </div>
