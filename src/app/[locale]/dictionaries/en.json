@@ -3,22 +3,20 @@
   "tagline_short": "Seeing is believing.",
   "main_sections": {
     "story_label": "Story",
+    "products_label": "Products",
+    "gallery_label": "Gallery",
+    "contact_label": "Contact",
     "hero_subtitle": "Natural light experience, indoors. SØNNSTA.",
     "hero_intro": "My name is Gyula Vasvári, creator of SØNNSTA windows. SØNNSTA is a special indoor window that evokes the sight and effect of natural sunlight in places where a real light source is not available. The aim of the development was to create an experience that not only provides light, but also visual depth perspective: the innovative technical solution built into the product creates the effect of a spacious, sun-drenched space, thus creating maximum illusion.",
     "hero_uniqueness": "This is what makes the handmade, custom-made SØNNSTA truly unique – the light not only illuminates, but also",
     "hero_uniqueness_bold": "brings depth, atmosphere and inspiration",
     "hero_uniqueness_bold_after": "to any interior space.",
     "hero_patent": "The SØNNSTA window is now a patented innovation that redefines interior lighting in homes, offices and professional environments.",
-    "tagline_full": "Seeing is believing.",
-    "cta_see_more": "See more…",
     "story_title": "The story that turned into light",
     "story_intro": "My name is Gyula Vasvári, creator of SØNNSTA windows. The idea for SØNNSTA started in a windowless basement room. A space where the lack of natural light was felt every day – and where the need arose for a window that isn't really there, yet seems completely real.",
     "story_development": "This inner motivation sparked years of development and experimentation. The goal was not simply to create a lamp, but to create a visual experience that would reflect sunlight not only as light, but also as mood and space.",
     "story_essence": "This is the essence of SØNNSTA: the structure, which is only a few centimeters thick, still appears to have depth, as if we were looking at the outside world through a real window. It is this combination of visual perspective and authentic sunlight effect that makes the product so special.",
     "story_today": "Today, SØNNSTA is not just an idea born out of personal need, but a patented innovation that can open up new perspectives anywhere. Custom-made and handcrafted, SØNNSTA windows provide the same experience in homes, offices, community or professional spaces: sunlight where it was previously impossible.",
-    "products_label": "Products",
-    "gallery_label": "Gallery",
-    "contact_label": "Contact",
     "toggle_menu": "Toggle menu",
     "all_products": "All products",
     "navigation_label": "Navigation",
@@ -158,13 +156,7 @@
     }
   },
   "footer": {
-    "gallery_label": "Gallery",
-    "contact_label": "Contact",
-    "phone": "+36 30 417 1737",
-    "email_raw": "[sonnsta.windows@gmail.com](mailto:sonnsta.windows@gmail.com)",
-    "address": "4225 Debrecen, Pál u. 24.",
-    "follow_us_label": "Follow us",
-    "copyright": "Sonnsta. All rights reserved."
+    "copyright": "All rights reserved."
   },
   "common_values": {
     "details_button": "Details",
@@ -176,19 +168,7 @@
     "package_contents_label": "Package contents:",
     "warranty_label": "Warranty and support:",
     "recommended_use_label": "Recommended use:",
-    "tagline_short": "Seeing is believing.",
-    "tagline_full": "SØNNSTA. Seeing is believing.",
-    "cta_see_more": "See more…",
     "homepage_label": "Home page",
-    "no_products_found": "No products found",
-    "generic_bullets": [
-      "Natural sunlight effect indoors",
-      "Real sunlight color temperature and light dynamics",
-      "Easy installation: 12V power supply, wall-mountable design",
-      "2-year manufacturer's warranty",
-      "English language customer service and support",
-      "Color temperature: in the range of natural sunlight",
-      "Light source: high-efficiency LEDs"
-    ]
+    "no_products_found": "No products found"
   }
 }

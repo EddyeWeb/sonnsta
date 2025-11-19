@@ -34,9 +34,9 @@ export default function Hero() {
       />
       <div className="relative flex items-center justify-center h-full z-10 px-4">
         <h2 className="text-white text-5xl md:text-6xl font-bold text-center max-w-4xl">
-          <p>SØNNSTA</p>
+          <p>{dict.brand_name}</p>
           <br />
-          {dict.main_sections.tagline_full}
+          {dict.tagline_short}
         </h2>
       </div>
     </div>

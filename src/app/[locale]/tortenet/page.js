@@ -57,7 +57,7 @@ export default function StoryPage() {
 
               <strong className="text-gray-900 text-xl lg:text-2xl mt-6 block">
                 {dict.brand_name}.{` `}
-                {dict.main_sections.tagline_full}
+                {dict.tagline_short}
               </strong>
             </div>
           </div>

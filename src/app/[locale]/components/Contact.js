@@ -98,6 +98,7 @@ export default function Footer() {
       <div className="text-center text-sm text-gray-400 py-4 border-t border-gray-700">
         © {new Date().getFullYear()}
         {` `}
+        {dict.brand_name}.{` `}
         {dict.footer.copyright}
       </div>
     </footer>

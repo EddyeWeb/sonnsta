@@ -37,7 +37,7 @@ export default function Story() {
             </p>
             <strong className="text-gray-700 leading-relaxed text-lg">
               {dict.brand_name}.{` `}
-              {dict.main_sections.tagline_full}
+              {dict.tagline_short}
             </strong>
             <Link href={`/${locale}/tortenet`}>
               <button className="mt-6 bg-black hover:bg-gradient-to-r hover:from-gray-900 hover:to-gray-700 text-white font-karla font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 ease-in-out">
