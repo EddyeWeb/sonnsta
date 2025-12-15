@@ -80,10 +80,6 @@ export default function ProductPageClient({ termek }) {
                 details.specs
               )}
               {renderSection(
-                dict.common_values.package_contents_label,
-                details.package
-              )}
-              {renderSection(
                 dict.common_values.warranty_label,
                 details.warranty
               )}
