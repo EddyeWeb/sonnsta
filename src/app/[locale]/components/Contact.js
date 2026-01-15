@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { useDictionary } from "../providers/DictionaryProvider";
 
 export default function Footer() {
@@ -51,11 +51,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href="mailto:vasvari.gyula@sonnsta.hu"
-                className="hover:underline"
-              >
-                vasvari.gyula@sonnsta.hu
+              <a href="mailto:sonnsta@sonnsta.hu" className="hover:underline">
+                sonnsta@sonnsta.hu
               </a>
             </li>
             <li>
@@ -90,6 +87,14 @@ export default function Footer() {
               className="text-white hover:text-pink-400"
             >
               <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://www.tiktok.com/@sonnsta.ablak"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-purple-400"
+            >
+              <FaTiktok size={24} />
             </a>
           </div>
         </div>
